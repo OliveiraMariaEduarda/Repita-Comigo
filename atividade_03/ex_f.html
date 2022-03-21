@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seis</title>
+    <script>
+        /*Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.*/
+
+        /*var alunos = 0;
+        var nota_01 = parseFloat(prompt("Insira sua nota"));
+        var nota_02 = parseFloat(prompt("Insira outra nota"));
+        var media = (nota_01 + nota_02) / 2;*/
+
+            var n_01 = parseInt(prompt("Digite a primeira nota:"));
+            var n_02 = parseInt(prompt("Digite a segunda nota:"));
+            var media_final = [];
+
+            var media_01 = (n_01 + n_02) / 2;
+
+            var alunos_aprovados = 0;
+            var outro_aluno = prompt("Calcular a média de outro aluno Sim/Não?");
+            var media_02 = (n_01 + n_02) / 2;
+
+            while(outro_aluno!="NÃO"){
+                n_01 = parseInt(prompt("Digite a primeira nota"));
+                n_02 = parseInt(prompt("Digite a segunda nota"));
+
+            if(media_01>= 6){
+            alunos_aprovados = alunos_aprovados + 1;
+            media_final.push(media_01);
+            }
+            outro_aluno = prompt("Calcular a média de outro aluno Sim/Não?");
+            }
+
+            document.write("Alunos Aprovados: " + alunos_aprovados);
+            document.write("   ||| Média Final:" + media_final);
+
+           
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

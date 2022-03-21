@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quatroze</title>
+    <script>
+        /*Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão no intervalo [24,42] (incluindo os valores 24 e 42 no intervalo) e quantos deles estão fora deste intervalo.*/
+
+        var acumulador = 0;
+        var dentro = [];
+        var fora = [];
+
+
+        while(acumulador < 9){
+            var n = parseFloat(prompt("Informe um número"))
+            if(n <= 42 && n >= 24){
+                dentro.push(n);
+            }
+            else{
+                fora.push(n);
+            }
+
+            acumulador += 1;
+        }
+
+        document.write( dentro + " <br>" + fora);
+
+
+
+        /*var contagem = 1;
+        var arry = [];
+        console.log(arry.length);
+        while( contagem <= 10){
+            contagem += 1
+            var numeros = parseFloat(prompt("Informe um número"))
+            var adc = arry.push(numeros)
+        }
+
+        alert(arry);*/
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

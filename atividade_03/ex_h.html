@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oito</title>
+    <script>
+
+        /*Escreva um algoritmo para ler as notas da 1a. e 2a. avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota.
+Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário*/
+
+        var n_01 = parseFloat(prompt("Informe a nota da primeira avaliação"));
+        var n_02 = parseFloat(prompt("Informe a nota da segunda avaliação"));
+
+        while (n_01 < 0 ){
+            alert("Nota invalida")
+            n_01 = parseFloat(prompt("Informe a nota da primeira avaliação"));
+        }
+
+        while (n_01 > 10 ){
+            alert("Nota invalida")
+            n_01 = parseFloat(prompt("Informe a nota da primeira avaliação"));
+        }
+
+        while(n_02 < 0 ){
+            alert("Nota invalida")
+            n_02 = parseFloat(prompt("Informe a nota da segunda avaliação"));
+        }
+
+        while(n_02 > 10 ){
+            alert("Nota invalida")
+            n_02 = parseFloat(prompt("Informe a nota da segunda avaliação"));
+        }
+
+        var media = (n_01 + n_02) / 2;
+        alert("Sua média é " + media);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

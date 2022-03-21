@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um</title>
+    <script>
+        /* Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for ZERO, deve ser lido um novo valor, ou seja, para o segundo valor não pode ser aceito o valor zero nem negativo e imprimir o resultado da divisão do primeiro valor lido pelo segundo valor lido*/
+
+
+        /*var n_01 = parseFloat(prompt("Informe um número"));
+        var n_02 = parseFloat(prompt("Informe um número"));
+
+        switch(n_01 && n_02){
+            case
+        }*/
+
+        var n_01 = parseFloat(prompt("Informe um número"));
+        var n_02 = parseFloat(prompt("Informe um número"));
+
+        while (n_01 <= 0){
+            alert("Não é possível digitar números negativos")
+            n_01 = parseFloat(prompt("Informe um número"));
+        }
+
+        while(n_02 <= 0){
+            alert("Não é possível digitar números negativos")
+            n_02 = parseFloat(prompt("Informe um número"));
+        }
+
+        var divisao = n_01 / n_02
+        alert("Sua divisãoisão é igual à: " + divisao);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
